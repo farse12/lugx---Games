@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+  
+    <title>LUGX</title>
+
+    <Style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0171F9;
+}
+
+/* HEADER */
+.headerContainer {
+    background-color: #0171F9;
+}
+
+.header {
+    height: 80px;
+    background-color: #0171F9;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.headerLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+}
+
+.headerLinks a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+.headerLinks a:hover {
+    background-color: #1A7FF9;
+}
+
+.logo img {
+    width: 150px;
+}
+/* END HEADER */
+
+/* LANDING PAGE */
+.landingPageContainer {
+    background-color: #0171F9;
+    border-radius: 0 0 100px 100px;
+}
+
+.landingPage {
+    display: flex;
+    align-items: center;
+    background-color: #0171F9;
+    color: #fff;
+    padding: 80px 100px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.landingPage .slogan {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.landingPage .welcome {
+    font-size: x-large;
+    margin-bottom: 15px;
+}
+
+.landingPage .description {
+    color: #000;
+    width: 80%;
+    font-weight: 500;
+}
+
+.searchBar {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.searchBar input {
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    width: 60%;
+    height: 50px;
+    font-size: large;
+    padding-left: 20px;
+}
+
+.searchBar input::placeholder {
+    font-size: medium;
+}
+
+.btn {
+    border-radius: 50px;
+    height: 52px;
+    border: none;
+    font-weight: 600;
+    font-size: medium;
+    padding: 0 25px;
+    background-color: #EE626B;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #9E4147;
+}
+
+.searchBar .searchBtn {
+    margin-left: -150px;
+}
+
+.leftSide {
+    padding-top: 30px;
+    flex: 8;
+}
+
+.imageContainer {
+    flex: 4;
+}
+
+.imageContainer img {
+    width: 100%;
+    border-radius: 20px;
+}
+/* END LANDING PAGE */
+
+/* TRENDING GAMES */
+.trendingContainer {
+    margin: auto;
+    max-width: 1300px;
+    margin-top: 100px;
+    padding: 0 50px;
+}
+
+.trendingHeader, .mostHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.trendingHeader h1, .mostHeader h1, .categoryHeader h1 {
+    margin-top: 0;
+}
+
+.trendingContainer span, .mostContainer span, .categoryHeader span {
+    text-transform: uppercase;
+    color: #EE626B;
+    font-weight: 600;
+}
+
+.trendingCard, .mostCards, .categoryCards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.trendingCard .card {
+    position: relative;
+    flex: 1;
+}
+
+.trendingCard .card img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.trendingCard .card .cardInfo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #EEEEEE;
+    border-radius: 0 0 20px 20px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trendingCard .cardName h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.trendingCard .cardName p {
+    color: gray;
+    margin-bottom: 0;
+}
+
+.trendingCard .cardInfo .icon img {
+    width: 50px;
+    transition: .3s;
+}
+
+.trendingCard .cardInfo img:hover {
+    transform: scale(1.1);
+}
+/* END TRENDING GAMES */
+
+/* MOST PLAYED */
+.mostContainer {
+    background-color: #EEEEEE;
+    margin-top: 150px;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.mostContainer .mostPlayed {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.cardImg img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.mostCards .cardInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.mostCards .cardInfo .genre {
+    margin-bottom: 0;
+    color: gray;
+}
+
+.mostCards .card {
+    flex: 1;
+}
+/* END MOST PLAYED */
+
+/* CATEGORY GAMES */
+.categoryContainer {
+    margin-top: 150px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 50px;
+}
+
+.category .categoryHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.category .card .cardImg {
+    position: relative;
+}
+
+.category .card .genre {
+    background-color: #0171F9;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 20px 20px 0 0;
+}
+
+.category .categoryCards {
+    margin-top: 30px;
+}
+
+.categoryCards .card {
+    flex: 1;
+}
+
+.card {
+    transition: .3s;
+}
+
+.category .card:hover {
+    transform: scale(1.03);
+}
+/* END CATEGORY GAMES */
+
+/* FOOTER */
+.footerContainer {
+    background-color: #0171F9;
+    height: 150px;
+    border-radius: 100px 100px 0 0;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    max-width: 1300px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: larger;
+    padding: 0 20px;
+}
+/* END FOOTER */
+
+/* FORM */
+.formContainer {
+    display: flex;
+    padding: 40px;
+    margin: auto;
+    justify-content: center;
+    max-width: 1300px;
+}
+
+.formContainer form {
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    height: 450px;
+}
+
+.formContainer form input, 
+.formContainer form textarea {
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: large;
+    width: 100%;
+}
+
+.formContainer input {
+    height: 50px;
+    border-radius: 50px;
+}
+
+.formContainer textarea {
+    border-radius: 20px;
+    padding-top: 15px;
+    resize: none;
+    height: 120px;
+}
+/* END FORM */
+
+/* ==========================================
+   MEDIA QUERIES (HORIZONTAL SCROLL ON MOBILE)
+   ========================================== */
+
+@media (max-width: 992px) {
+    .header {
+        padding: 0 30px;
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .headerLinks {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .landingPage {
+        flex-direction: column;
+        padding: 40px 30px;
+        text-align: center;
+    }
+
+    .landingPage .description {
+        width: 100%;
+        margin: auto;
+    }
+
+    .searchBar {
+        justify-content: center;
+    }
+
+    .searchBar input {
+        width: 100%;
+    }
+
+    .imageContainer {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    /* جعل الصفوف تقبل السحب الأفقي مع الحفاظ على الكروت جنب بعض */
+    .trendingCard, .mostCards, .categoryCards {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 20px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* إخفاء شريط التمرير المزعج (Scrollbar) في المتصفحات */
+    .trendingCard::-webkit-scrollbar,
+    .mostCards::-webkit-scrollbar,
+    .categoryCards::-webkit-scrollbar {
+        display: none;
+    }
+    .trendingCard, .mostCards, .categoryCards {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    /* تحديد عرض مناسب ثابت لكل كارت علشان ميتضغطش */
+    .trendingCard .card,
+    .mostCards .card,
+    .categoryCards .card {
+        flex: 0 0 240px;
+        scroll-snap-align: start;
+    }
+}
+
+@media (max-width: 600px) {
+    .headerLinks {
+        flex-direction: column;
+    }
+
+    .landingPage .slogan {
+        font-size: 32px;
+    }
+
+    .searchBar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .searchBar input {
+        width: 100%;
+    }
+
+    .searchBar .searchBtn {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .trendingContainer, .categoryContainer {
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+
+    .mostContainer {
+        padding: 30px 20px;
+        border-radius: 40px;
+        margin-top: 50px;
+    }
+
+    .landingPageContainer {
+        border-radius: 0 0 40px 40px;
+    }
+
+    .footerContainer {
+        border-radius: 40px 40px 0 0;
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .footer {
+        font-size: medium;
+    }
+
+    /* عرض مناسب إضافي للشاشات الصغيرة جدًا */
+    .trendingCard .card,
+    .mostCards .card,
+    .categoryCards .card {
+        flex: 0 0 210px;
+    }
+}
+    </Style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="headerContainer">
+      <div class="header">
+        <a href="c:\Users\CS\Desktop\New folder\Contact US.HTML" class="logo">
+          <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/logo.png?raw=true" alt="logo" />
+        </a>
+        <div class="headerLinks">
+          <a href="c:\Users\CS\Desktop\New folder\Contact US.HTML">Home</a>
+          <a href="c:\Users\CS\Desktop\New folder\Contact US.HTML">Our Shop</a>
+          <a href="Contact US.HTML">Product Details</a>
+          <a href="c:\Users\CS\Desktop\New folder\Contact US.HTML">Contact Us</a>
+          <button class="btn">sign in</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- LANDING PAGE -->
+    <div class="landingPageContainer">
+      <div class="landingPage">
+        <!-- LEFT SIDE -->
+        <div class="leftSide">
+          <p class="welcome">Welcome to LUGX</p>
+          <h1 class="slogan">best gaming site ever!</h1>
+          <p class="description">
+            LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.
+          </p>
+          <div class="searchBar">
+            <input type="text" placeholder="Type Something" />
+            <button class="btn searchBtn">SEARCH NOW</button>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE  -->
+        <div class="imageContainer">
+          <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/banner-image.jpg?raw=true" alt="class" />
+        </div>
+      </div>
+    </div>
+
+    <!-- TRENDING GAMES SECTION  -->
+    <div class="trendingContainer">
+      <span>Trending</span>
+      <div class="trendingHeader">
+        <h1>Trending Games</h1>
+        <button class="btn">view all</button>
+      </div>
+      <div class="trendingCard">
+        <!-- TRENDING GAME 1 -->
+        <div class="card">
+          <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/trending-01.jpg?raw=true" alt="" />
+          <div class="cardInfo">
+            <div class="cardName">
+              <p>Action</p>
+              <h3>Warframe</h3>
+            </div>
+            <a href="#" class="icon">
+              <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/online-shopping.png?raw=true" alt="class" />
+            </a>
+          </div>
+        </div>
+
+        <!-- TRENDING GAME 2 -->
+        <div class="card">
+          <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/trending-02.jpg?raw=true" alt="class" />
+          <div class="cardInfo">
+            <div class="cardName">
+              <p>Fantasy</p>
+              <h3>Tower of Fantasy</h3>
+            </div>
+            <a href="#" class="icon">
+              <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/online-shopping.png?raw=true" alt="class" />
+            </a>
+          </div>
+        </div>
+
+        <!-- TRENDING GAME 3 -->
+        <div class="card">
+          <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/trending-03.jpg?raw=true" alt="class" />
+          <div class="cardInfo">
+            <div class="cardName">
+              <p>Action</p>
+              <h3>The First Descendant</h3>
+            </div>
+            <a href="#" class="icon">
+              <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/online-shopping.png?raw=true" alt="class" />
+            </a>
+          </div>
+        </div>
+
+        <!-- TRENDING GAME 4 -->
+        <div class="card">
+          <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/trending-04.jpg?raw=true" alt="class" />
+          <div class="cardInfo">
+            <div class="cardName">
+              <p>Action</p>
+              <h3>Yu-Gi-Oh</h3>
+            </div>
+            <a href="#" class="icon">
+              <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/online-shopping.png?raw=true" alt="class" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOST PLAYED SECTION  -->
+    <div class="mostContainer">
+      <div class="mostPlayed">
+        <span>top games</span>
+        <div class="mostHeader">
+          <h1>Most Played</h1>
+          <button class="btn">view all</button>
+        </div>
+
+        <div class="mostCards">
+          <!-- CARD 1  -->
+          <div class="card">
+            <div class="cardImg">
+              <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/top-game-01.jpg?raw=true" alt="class" />
+            </div>
+            <div class="cardInfo">
+              <p class="genre">Adventure</p>
+              <h3 class="cardName">War Frame</h3>
+              <button class="btn">explore</button>
+            </div>
+          </div>
+          <!-- CARD 2  -->
+          <div class="card">
+            <div class="cardImg">
+              <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/top-game-02.jpg?raw=true" alt="class" />
+            </div>
+            <div class="cardInfo">
+              <p class="genre">Adventure</p>
+              <h3 class="cardName">PUBG</h3>
+              <button class="btn">explore</button>
+            </div>
+          </div>
+          <!-- CARD 3  -->
+          <div class="card">
+            <div class="cardImg">
+              <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/top-game-03.jpg?raw=true" alt="class" />
+            </div>
+            <div class="cardInfo">
+              <p class="genre">Adventure</p>
+              <h3 class="cardName">APEX</h3>
+              <button class="btn">explore</button>
+            </div>
+          </div>
+          <!-- CARD 4 -->
+          <div class="card">
+            <div class="cardImg">
+              <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/top-game-04.jpg?raw=true" alt="class" />
+            </div>
+            <div class="cardInfo">
+              <p class="genre">Adventure</p>
+              <h3 class="cardName">TheSIMS4</h3>
+              <button class="btn">explore</button>
+            </div>
+          </div>
+          <!-- CARD 5 -->
+          <div class="card">
+            <div class="cardImg">
+              <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/top-game-05.jpg?raw=true" alt="class" />
+            </div>
+            <div class="cardInfo">
+              <p class="genre">Adventure</p>
+              <h3 class="cardName">Lostark</h3>
+              <button class="btn">explore</button>
+            </div>
+          </div>
+          <!-- CARD 6 -->
+          <div class="card">
+            <div class="cardImg">
+              <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/top-game-06.jpg?raw=true" alt="class" />
+            </div>
+            <div class="cardInfo">
+              <p class="genre">Adventure</p>
+              <h3 class="cardName">DESTINY2</h3>
+              <button class="btn">explore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOP CATEGORIES  -->
+    <div class="categoryContainer">
+      <div class="category">
+        <div class="categoryHeader">
+          <span>top games</span>
+          <h1>Top Categories</h1>
+        </div>
+
+        <div class="categoryCards">
+          <!-- CARD 1  -->
+          <div class="card">
+            <div class="genre">Action</div>
+            <div class="cardImg">
+              <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/categories-01.jpg?raw=true" alt="class" />
+            </div>
+          </div>
+          <!-- CARD 2 -->
+          <div class="card">
+            <div class="genre">Action</div>
+            <div class="cardImg">
+              <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/categories-02.jpg?raw=true" alt="class" />
+            </div>
+          </div>
+          <!-- CARD 3 -->
+          <div class="card">
+            <div class="genre">Action</div>
+            <div class="cardImg">
+              <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/categories-03.jpg?raw=true" alt="class" />
+            </div>
+          </div>
+          <!-- CARD 4 -->
+          <div class="card">
+            <div class="genre">Action</div>
+            <div class="cardImg">
+              <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/categories-04.jpg?raw=true" alt="class" />
+            </div>
+          </div>
+          <!-- CARD 5   -->
+          <div class="card">
+            <div class="genre">Action</div>
+            <div class="cardImg">
+              <img src="https://github.com/yaya1426/html/blob/4aeb3e1814b366affbd3810d2408400b0cb0d9fb/images/categories-05.jpg?raw=true" alt="class" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footerContainer">
+      <div class="footer">
+        copyright &copy; 2048 LUGX Gaming Company. All rights reserved. Design:
+        TemplateMo
+      </div>
+    </div>
+  </body>
+</html>
